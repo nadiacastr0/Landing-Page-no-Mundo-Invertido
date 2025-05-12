@@ -11,9 +11,9 @@
     <link rel="stylesheet" href="./assets/styles/main.css">
 </head>
 
-<body>
+<body class="light-theme">
     <header>
-        <audio id="music" autoplay>
+        <audio id="music" autoplay loop>
             <source src="assets/audios/normal-world.mpeg" />
         </audio>
 
@@ -61,11 +61,11 @@
             <div class="container section-text">
                 <h2>A segunda série mais assistida da Netflix</h2>
                 <ul class="gallery-container">
-                    <li class="gallery-image ivert-element"><img src="assets/image/content/serie-image-01.png"
+                    <li class="gallery-image invert-element"><img src="assets/image/content/serie-image-01.png"
                             alt="Imagem de Vecna"></li>
-                    <li class="gallery-image ivert-element"><img src="assets/image/content/serie-image-02.png"
+                    <li class="gallery-image invert-element"><img src="assets/image/content/serie-image-02.png"
                             alt="Imagem ilustrativa dos amigos de Eleven"></li>
-                    <li class="gallery-image ivert-element"><img src="assets/image/content/serie-image-03.png"
+                    <li class="gallery-image invert-element"><img src="assets/image/content/serie-image-03.png"
                             alt="Imagem Eleven assustada"></li>
                 </ul>
             </div>
@@ -102,7 +102,15 @@
             JavaScript aprendidos na DIO._</p>
         <img src="assets/image/footer/logo.svg" alt="Logotipo DIO">
     </footer>
+    <div id="customAlert" class="custom-alert hidden">
+    <div class="alert-box">
+        <h3>Inscrição confirmada! 👹</h3>
+        <p id="alertMessage"></p>
+        <button onclick="closeAlert()">Fechar</button>
+    </div>
+    </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="./script/engine.js"></script>
 </body>
 
